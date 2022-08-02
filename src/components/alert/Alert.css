@@ -1,0 +1,8 @@
+/*!ALERTS*/
+.alert-personalize {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: fit-content;
+  z-index: 2000;
+}

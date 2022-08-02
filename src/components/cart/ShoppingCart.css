@@ -1,0 +1,26 @@
+/*!QUANTITY COMPONENT*/
+.product-quantity {
+  display: flex;
+}
+.quantity__btn-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0.3rem;
+}
+
+.quantity__btn {
+  border: none;
+  margin-right: 0.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.9rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.quantity__btn:hover {
+  background-color: rgb(216, 216, 216);
+}

@@ -1,0 +1,27 @@
+.navbar {
+  position: sticky;
+  top: 0.1px;
+  z-index: 100;
+}
+.nav-item {
+  color: black !important;
+}
+.navbar-icons {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  background: #fe748b;
+  background: -webkit-linear-gradient(to left, #ffc3a0, #fe748b);
+  background: linear-gradient(to left, #ffc3a0, #fe748b);
+  padding: 0.6rem;
+  border-radius: 50%;
+  color: aliceblue;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-icons:hover {
+  transform: scale(1.08);
+  background: #ff3a5b;
+  background: -webkit-linear-gradient(to left, #ffc3a0, #ff3a5b);
+  background: linear-gradient(to left, #ffc3a0, #ff3a5b);
+}

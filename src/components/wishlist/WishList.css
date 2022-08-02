@@ -1,0 +1,21 @@
+.modal-wish {
+  margin: 0 !important;
+  position: absolute;
+  width: 30%;
+  right: 3px;
+  height: 100% !important;
+}
+
+.modal-contentWish {
+  height: 100% !important;
+  width: 100% !important;
+}
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
