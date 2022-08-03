@@ -9,7 +9,15 @@ const SearcherModal = () => {
   const handleSearch = () => {
     setWord(inputSearch.current.value.toLowerCase());
   };
+  const showSearchedItems = () => {
+    const products = productsData
+      //First filter and return the product you want
+      .filter((product) => product.name.toLowerCase().includes(word))
+      //Then return transform data in react component
+      .map((product) => <ProductItem product={product} key={product.id} />);
 
+    return products.slice(0, 4);
+  };
   return (
     <div
       class="modal fade "
@@ -51,10 +59,7 @@ const SearcherModal = () => {
               {" "}
               <h5>Results.</h5>
               <div className="products-searcher row row-cols-4 g-4 m-0 ">
-                {productsData.slice(0, 4).map((product) => {
-                  if (product.name.toLowerCase().includes(word))
-                    return <ProductItem product={product} key={product.id} />;
-                })}
+                {showSearchedItems()}
               </div>
             </div>
           </div>
