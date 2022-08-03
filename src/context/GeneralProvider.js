@@ -9,7 +9,6 @@ const GeneralProvider = ({ children }) => {
       <AlertProvider>
         <CartProvider>
           <WishProvider>
-            {children}
             <LoginProvider>{children}</LoginProvider>
           </WishProvider>
         </CartProvider>

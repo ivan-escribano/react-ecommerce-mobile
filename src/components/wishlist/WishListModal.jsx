@@ -8,42 +8,34 @@ const WishListModal = () => {
 
   return (
     <div
-      class="modal fade right"
+      className="modal fade right"
       id="wishListModal"
       tabindex="-1"
       aria-labelledby="wishListModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-wish modal-dialog-scrollable">
-        <div class="modal-content modal-contentWish">
-          <div class="modal-header cover">
-            <h5 class="modal-title" id="wishListModalLabel">
-              Wish List
-            </h5>
+      <div className="modal-dialog modal-wish modal-dialog-scrollable">
+        <div className="modal-content modal-contentWish">
+          <div className="modal-header cover">
+            <div className="d-flex align-items-center">
+              <h5 className="modal-title" id="wishListModalLabel">
+                Wish List
+              </h5>
+              <i className="fa-solid fa-heart ms-2"></i>
+            </div>
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div className="modal-body">
             {wishList.map((wishItem) => (
               <WishListItem key={wishItem.id} wishItem={wishItem} />
             ))}
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Save changes
-            </button>
-          </div>
+          {/* <div className="modal-footer"></div> */}
         </div>
       </div>
     </div>

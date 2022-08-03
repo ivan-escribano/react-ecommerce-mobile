@@ -25,3 +25,12 @@
   background: -webkit-linear-gradient(to left, #ffc3a0, #ff3a5b);
   background: linear-gradient(to left, #ffc3a0, #ff3a5b);
 }
+
+.navbar__logo {
+  font-size: 1.8rem;
+}
+
+.navbar__logo-text {
+  color: #fe748b;
+  font-weight: 600;
+}

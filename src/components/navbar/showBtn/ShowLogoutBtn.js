@@ -5,7 +5,7 @@ const ShowLogoutBtn = () => {
   const { onLogout } = useContext(LoginContext);
   return (
     <i
-      class="fa-solid fa-right-from-bracket navbar-icons"
+      className="fa-solid fa-right-from-bracket navbar-icons"
       onClick={onLogout}
     ></i>
   );

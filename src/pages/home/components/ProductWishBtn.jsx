@@ -4,7 +4,6 @@ import { BsHeartFill, BsHeart } from "react-icons/bs";
 import { WishContext } from "../../../context/WishProvider";
 const ProductWishBtn = ({ product }) => {
   const { wishList, dispatch } = useContext(WishContext);
-  console.log(wishList);
   const inWishList = wishList.some((wish) => wish.id === product.id);
 
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import SearchForm from "./SearchForm";
+import ShowAuthBtn from "./ShowAuthBtn";
 import ShowCartBtn from "./ShowCartBtn";
 import ShowLoginBtn from "./ShowLoginBtn";
 import ShowWishBtn from "./ShowWishBtn";
@@ -10,7 +11,7 @@ const ShowBtn = () => {
       <SearchForm />
       <ShowCartBtn />
       <ShowWishBtn />
-      <ShowLoginBtn />
+      <ShowAuthBtn />
     </div>
   );
 };

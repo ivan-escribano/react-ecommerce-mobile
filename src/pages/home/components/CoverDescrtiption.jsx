@@ -8,7 +8,9 @@ const CoverDescrtiption = () => {
         dicta accusamus.
       </h1>
       <div>
-        <button className="btn btn-color my-3">Start shopping 🛒 </button>
+        <button className="btn btn-color my-3">
+          <i className="fa-solid fa-cart-shopping me-2"></i>Start shopping
+        </button>
       </div>
     </div>
   );

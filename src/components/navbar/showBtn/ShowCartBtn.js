@@ -6,7 +6,7 @@ const ShowCartBtn = () => {
       {/* Button trigger modal  */}
 
       <i
-        class="fa-solid fa-cart-shopping navbar-icons"
+        className="fa-solid fa-cart-shopping navbar-icons"
         data-bs-toggle="modal"
         data-bs-target="#shoppingCart"
       ></i>
