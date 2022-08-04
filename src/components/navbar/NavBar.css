@@ -34,3 +34,7 @@
   color: #fe748b;
   font-weight: 600;
 }
+
+.search__read-only {
+  background-color: white !important;
+}
