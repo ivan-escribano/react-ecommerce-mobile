@@ -10,7 +10,14 @@ const Checkout = () => {
     <>
       <h5 className="card-text">Total price: {price}€</h5>
       {/* onClick={goCheckout} */}
-      <button className="btn btn-color">Checkout</button>
+      <button
+        className="btn btn-color"
+        data-bs-target="#checkoutModal"
+        data-bs-toggle="modal"
+        data-bs-dismiss="modal"
+      >
+        Checkout
+      </button>
     </>
   );
 };

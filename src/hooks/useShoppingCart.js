@@ -10,6 +10,8 @@ function useShoppingCart(state, action) {
       return substractQuantity(product, state);
     case "addQuantity":
       return addQuantity(product, state);
+    case "resetShop":
+      return reset();
     default:
       break;
   }
@@ -67,5 +69,9 @@ const substractQuantity = (product, state) => {
   } else {
     return state;
   }
+};
+const reset = () => {
+  localStorage.removeItem("shoppingCart");
+  return [];
 };
 export default useShoppingCart;
