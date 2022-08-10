@@ -2,6 +2,7 @@ import Alert from "./components/alert/Alert";
 import ShoppingCart from "./components/cart/ShoppingCart";
 import CheckoutConfirm from "./components/checkout/CheckoutConfirm";
 import CheckoutForm from "./components/checkout/CheckoutForm";
+import Filter from "./components/filter/Filter";
 import LoginForm from "./components/login/LoginForm";
 import NavBar from "./components/navbar/NavBar";
 import SearcherModal from "./components/searcher/SearcherModal";
@@ -22,6 +23,7 @@ function App() {
         <SearcherModal />
         <CheckoutForm />
         <CheckoutConfirm />
+        <Filter />
       </GeneralProvider>
     </>
   );
