@@ -13,6 +13,9 @@ const LinksNav = () => {
       <li className="nav-item mx-4">
         <LinkNav src={"contact"} name={"Contact"} />
       </li>
+      <li className="nav-item mx-4">
+        <LinkNav src={"comparador"} name={"Comparador"} />
+      </li>
     </ul>
   );
 };

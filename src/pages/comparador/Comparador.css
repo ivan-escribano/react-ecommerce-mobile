@@ -1,0 +1,17 @@
+.comparator {
+  height: 90vh;
+  background-color: white;
+  background-image: url("../../assets/img/cover-comparator.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.inputs-comparator {
+  background-color: white;
+  height: max-content;
+  margin-top: 6rem;
+  border-radius: 10px;
+  padding: 5rem 5rem 3rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
