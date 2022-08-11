@@ -1,5 +1,5 @@
 import Home from "./home/Home";
-import ProductDetails from "./product-details/ProductDetails";
+import ProductDetailsContainer from "./product-details/ProductDetailsContainer";
 import "./index.css";
 
-export { Home, ProductDetails };
+export { Home, ProductDetailsContainer };

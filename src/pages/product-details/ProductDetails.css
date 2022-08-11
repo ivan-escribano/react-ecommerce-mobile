@@ -1,0 +1,42 @@
+.product-details__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+
+.product-details {
+  width: 80%;
+  display: flex;
+}
+hr {
+  padding: 0.09rem;
+}
+.product-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-image__carroussel {
+  display: flex;
+  padding: 0 2rem;
+}
+.product-miniature {
+  width: 6rem;
+  height: 6rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background-color: rgb(255, 240, 240);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-miniature:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.product-description {
+  color: black;
+}
