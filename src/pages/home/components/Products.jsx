@@ -5,15 +5,35 @@ import { FilterContext } from "../../../context/FilterProvider.js";
 import productsData from "../../../data/phones.js";
 import ProductItem from "./ProductItem";
 const Products = () => {
-  const { filter } = useContext(FilterContext);
-  console.log(filter);
+  const { filter: options } = useContext(FilterContext);
+  const filterProducts = () => {
+    const products = productsData
+      .filter((product) => {
+        if (!options.price.min && !options.price.max) return product;
+        else if (
+          product.price >= options.price.min &&
+          product.price <= options.price.max
+        )
+          return product;
+      })
+      .filter((product) => {
+        if (options.color === "all") return product;
+        else if (product.color === options.color) return product;
+      })
+      .filter((product) => {
+        if (options.brand === "all") return product;
+        else if (product.brand === options.brand) return product;
+      })
+      .map((product) => <ProductItem product={product} key={product.id} />);
+    console.log(products);
+    return products;
+  };
+  console.log(options);
   // const { filter } = useContext(FilterProvider);
   return (
     <div className="products p-4">
       <div className="products__list row row-cols-4 g-4 m-0 ">
-        {productsData.map((product) => (
-          <ProductItem product={product} key={product.id} />
-        ))}
+        {filterProducts()}
       </div>
     </div>
   );

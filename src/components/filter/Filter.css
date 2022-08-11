@@ -36,7 +36,6 @@
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: aqua;
   position: relative;
   display: flex;
   align-items: center;
@@ -66,4 +65,7 @@
 }
 .input-purple {
   background-color: purple;
+}
+.input-all {
+  background-color: rgb(196, 196, 196);
 }

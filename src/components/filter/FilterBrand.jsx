@@ -21,6 +21,16 @@ const FilterBrand = () => {
             className="form-check-input mx-3"
             name="phone"
             onChange={handleChange}
+            value="all"
+          />
+          <span>All</span>
+        </label>
+        <label htmlFor="" className="my-1">
+          <input
+            type="radio"
+            className="form-check-input mx-3"
+            name="phone"
+            onChange={handleChange}
             value="samsung"
           />
           <span>Samsung</span>

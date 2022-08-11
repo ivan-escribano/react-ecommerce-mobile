@@ -7,6 +7,8 @@ const images = [
     description:
       "Google ha puesto todas las cartas sobre la mesa con su Pixel 6 Pro. Un teléfono que por fin compite de tú a tú con los mejores del mercado, que vuelve a conquistar por su cámara de fotos y que llega con un panel Quad HD+ con tasa de refresco adaptativa hasta 120 Hz. En esta generación sí que tenemos venta en España.",
     img: img.google_pixel_6_pro,
+    color: "white",
+    brand: "google",
   },
   {
     id: 2,
@@ -15,6 +17,8 @@ const images = [
     description:
       "El OPPO Find X5 Pro es todo un golpe en la mesa. Supone un refinamiento respecto al OPPO Find X3 Pro, manteniendo lo mejor del modelo anterior y mejorando en cámara, potencia y sistemas de carga rápida. Firme candidato a rey de la corona en Android, con el único pecado de no ser lo más ambicioso del momento en zoom.",
     img: img.oppo_find_x5_pro,
+    color: "white",
+    brand: "oppo",
   },
   {
     id: 3,
@@ -23,6 +27,8 @@ const images = [
     description:
       "Si echabas de menos al Galaxy Note, el Galaxy S22 Ultra viene para cubrir su hueco en el mercado. La mejor pantalla en un Android, un sistema de cámaras con zoom de hasta 100 aumentos y los añadidos en productividad que aporta el S-Pen. La apuesta de Samsung por su familia S es más ambiciosa que nunca, y el modelo Ultra es clara prueba de ello.",
     img: img.samsung_galaxy_s22,
+    color: "white",
+    brand: "samsung",
   },
   {
     id: 4,
@@ -31,6 +37,8 @@ const images = [
     description:
       "El Realme GT 2 Pro es el hermano casi gemelo del OPPO Find X5 Pro. Comparte casi todo su hardware, presumiendo del único panel 2K AMOLED LTPO del mercado, una maravilla para los que quieren evitar las pantallas curvas. La cámara es ligeramente inferior a la del OPPO, pero la rebaja en precio respecto a este modelo es considerable.",
     img: img.realme_gt_2_pro,
+    color: "white",
+    brand: "realme",
   },
   {
     id: 5,
@@ -39,6 +47,8 @@ const images = [
     description:
       "El Vivo X80 Pro es uno de los mejores móviles chinos de gama alta. Una bestia en potencia, diseño y fotografía que no tiene miedo de competir contra los mejores en la gama alta.",
     img: img.vivo_x80_pro,
+    color: "blue",
+    brand: "vivo",
   },
   {
     id: 6,
@@ -47,6 +57,8 @@ const images = [
     description:
       "El Asus ROG Phone 6 Pro es una bestia para gamers, con el mejor procesador del mercado, un sistema de ventilación espectacular y una cantidad de accesorios que lo convierten en una propuesta única.",
     img: img.asus_rog_6_pro,
+    color: "blue",
+    brand: "asus",
   },
   {
     id: 7,
@@ -55,6 +67,8 @@ const images = [
     description:
       "El Xiaomi 12 Pro tiene como asignaturas pendientes la autonomía y el rendimiento, aunque es la apuesta por la primera línea de Xiaomi, y el resultado final es más que correcto. Un móvil potente, que destaca principalmente por el apartado fotográfico y con un diseño cuidado, en la línea de lo esperado en la gama más premium.",
     img: img.xiaomi_12_pro,
+    color: "black",
+    brand: "xiaomi",
   },
   {
     id: 8,
@@ -63,6 +77,8 @@ const images = [
     description:
       "Google ha puesto todas las cartas sobre la mesa con su Pixel 6 Pro. Un teléfono que por fin compite de tú a tú con los mejores del mercado, que vuelve a conquistar por su cámara de fotos y que llega con un panel Quad HD+ con tasa de refresco adaptativa hasta 120 Hz. En esta generación sí que tenemos venta en España.",
     img: img.google_pixel_6_pro,
+    color: "black",
+    brand: "google",
   },
 ];
 

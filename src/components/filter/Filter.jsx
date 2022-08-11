@@ -34,7 +34,6 @@ const Filter = () => {
               <FilterColor />
               <FilterBrand />
             </div>
-            {/* <div className="modal-footer"></div> */}
           </div>
         </div>
       </div>

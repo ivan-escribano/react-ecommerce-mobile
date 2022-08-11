@@ -9,8 +9,8 @@ const FilterPrice = () => {
   const inputMax = useRef();
   const inputMin = useRef();
   const handlePrice = () => {
-    const max = inputMax.current.value;
-    const min = inputMin.current.value;
+    const max = parseInt(inputMax.current.value);
+    const min = parseInt(inputMin.current.value);
     if (max && min) {
       setError(null);
       setFilter((prevState) => ({
