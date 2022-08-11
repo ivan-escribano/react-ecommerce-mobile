@@ -29,6 +29,15 @@ const images = [
     img: img.samsung_galaxy_s22,
     color: "white",
     brand: "samsung",
+    specification: {
+      cpu: "Samsung Exynos 2200",
+      battery: "5.000 mAh , Carga rápida 45W , Carga inalámbrica 15W",
+      OperatingSystem: "Android 12 con One UI 4.1",
+      dimensions: "163,3 x 77,9 x 8,9 mm / 227 gramos",
+      camera_f: "40 MP f/2.2",
+      camera_t: "108 MP f/1.8, OIS",
+      screen: "Dynamic AMOLED 2X curva de 6,8 pulgadas , Gorilla Glass Victus",
+    },
   },
   {
     id: 4,
@@ -69,6 +78,16 @@ const images = [
     img: img.xiaomi_12_pro,
     color: "black",
     brand: "xiaomi",
+    specification: {
+      cpu: "Qualcomm Snapdragon 8 Gen1 (SM8450)",
+      battery: "4.600 mAh , Carga rápida a 120 W , Carga inalámbrica 50 W",
+      OperatingSystem: "Android 12 y MIUI 13",
+      dimensions: "163,6 x 74,6 x 8,16 mm / 205 gramos",
+      camera_f: "32 MP HDR",
+      camera_t: "50 MP f/1.9, 24 mm",
+      screen:
+        "10-bit AMOLED E4,  6,73” 2K (1.440 x 3.200 px) , Gorilla Glass Victus",
+    },
   },
   {
     id: 8,

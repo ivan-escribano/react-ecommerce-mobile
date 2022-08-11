@@ -1,15 +1,18 @@
 import { useRef } from "react";
 import imgURL from "../../assets/img/comparator-img.png";
 import phones from "../../data/phones";
+import { useNavigate } from "react-router-dom";
 const ComparadorInputs = () => {
   // const [phonesState, setPhones] = useState({});
   const selectMobile1 = useRef("");
   const selectMobile2 = useRef("");
-
+  const navigate = useNavigate();
   const handleClick = () => {
     const mobile1 = JSON.parse(selectMobile1.current.value);
     const mobile2 = JSON.parse(selectMobile2.current.value);
-    console.log(mobile1, mobile2);
+    navigate("/comparator-product", {
+      state: { mobile1: mobile1, mobile2: mobile2 },
+    });
   };
   return (
     <div className="inputs-comparator d-flex ">
