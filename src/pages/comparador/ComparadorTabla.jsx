@@ -1,11 +1,13 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
+import ProductAdd from "../home/components/ProductAdd";
+import ProductWishBtn from "../home/components/ProductWishBtn";
 const ComparadorTabla = () => {
-  const { state } = useLocation();
+  const { state } = useOutletContext();
   const { mobile1, mobile2 } = state;
   const { specification: spec1 } = mobile1;
   const { specification: spec2 } = mobile2;
-  console.log(spec1, mobile2);
+
   return (
     <div className="w-75 bg-light comparator-table">
       {/* MOBILE 1 */}
@@ -40,7 +42,7 @@ const ComparadorTabla = () => {
             <td>{spec2.battery}</td>
           </tr>
           <tr>
-            <th scope="row">Sistema Operativo</th>
+            <th scope="row">Sistema </th>
             <td>{spec1.OperatingSystem}</td>
             <td>{spec2.OperatingSystem}</td>
           </tr>
@@ -60,9 +62,19 @@ const ComparadorTabla = () => {
             <td>{spec2.camera_t}</td>
           </tr>
           <tr>
-            <th scope="row">Pantalla</th>
-            <td>{spec1.screen}</td>
-            <td>{spec2.screen}</td>
+            <th scope="row">Acciones</th>
+            <td>
+              <div className="d-flex comparator-btn ">
+                <ProductAdd product={mobile1} />
+                <ProductWishBtn product={mobile1} />
+              </div>
+            </td>
+            <td>
+              <div className="d-flex comparator-btn">
+                <ProductAdd product={mobile2} />
+                <ProductWishBtn product={mobile2} />
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>

@@ -10,3 +10,7 @@
 table {
   cursor: pointer;
 }
+
+.comparator-btn > * {
+  margin-right: 4rem;
+}

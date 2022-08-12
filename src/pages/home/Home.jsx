@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer/Footer";
 import Cover from "./components/Cover";
 import Products from "./components/Products";
 import "./Home.css";
@@ -18,6 +19,7 @@ const Home = () => {
         </button>
       </div>
       <Products />
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,35 @@
+.icon-fb {
+  background-color: #3b5998;
+}
+.icon-twitter {
+  background-color: #55acee;
+}
+.icon-google {
+  background-color: #dd4b39;
+}
+.icon-ig {
+  background-color: #ac2bac;
+  color: white;
+}
+.icon-link {
+  background-color: #0082ca;
+}
+.icon-git {
+  background-color: #333333;
+}
+
+.btn-dark {
+  border: none;
+}
+
+footer {
+  background-color: rgb(243, 199, 199);
+}
+.footer2 {
+  background-color: rgb(243, 199, 199);
+  color: black;
+}
+.footer2 a {
+  text-decoration: none;
+  color: black;
+}

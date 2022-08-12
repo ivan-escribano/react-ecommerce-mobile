@@ -15,3 +15,26 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
+.comparator-nav {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.comparator-nav > * {
+  margin-bottom: 1rem;
+}
+.comparator-puntuation {
+  border-radius: 10px;
+  padding: 3rem 3rem 3rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 50%;
+}
