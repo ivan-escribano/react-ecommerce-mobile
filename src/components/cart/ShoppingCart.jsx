@@ -28,7 +28,7 @@ const ShoppingCart = () => {
                 // ref={shoppingFormClose}
               ></button>
             </div>
-            <div className="modal-body">
+            <div className="modal-body container__shop-cart">
               <Cart />
             </div>
             <div className="modal-footer d-flex justify-content-between">

@@ -29,7 +29,7 @@ const SearcherModal = () => {
       <div className="modal-dialog modal__search modal-xl m-auto">
         <div class="modal-content">
           <div class="modal-header cover">
-            <div className=" w-50">
+            <div className=" w-50 searcher">
               <h5 class="modal-title" id="exampleModalLabel">
                 Searcher:
               </h5>

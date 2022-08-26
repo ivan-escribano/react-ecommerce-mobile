@@ -1,0 +1,66 @@
+/*!TABLETS AND BIG PHONES*/
+@media (max-width: 768px) {
+  .navbar__logo {
+    display: none;
+  }
+  .navbar-nav {
+    display: none !important;
+  }
+  .cover {
+    flex-direction: column-reverse;
+  }
+  .cover__description-title {
+    width: 100% !important;
+  }
+  .cover__description-button {
+    display: flex;
+    justify-content: center;
+  }
+  .cover__img {
+    display: flex;
+    justify-content: center;
+  }
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .porduct-item {
+    width: 100%;
+  }
+  .products {
+    padding: 0px !important;
+  }
+  .products-header {
+    margin: 1rem !important;
+  }
+  .modal-filter {
+    width: 80% !important;
+  }
+  .searcher {
+    width: 100% !important;
+  }
+  .container__shop-cart {
+    text-align: center;
+  }
+  .container__shop-cart img {
+    width: 70%;
+  }
+  .modal-wish {
+    width: 83%;
+  }
+  .product-details {
+    flex-direction: column;
+  }
+  .product-image__carroussel {
+    display: none;
+  }
+  .product-details__container {
+    height: unset;
+  }
+  .product-details {
+    width: 100%;
+  }
+  .product-image {
+    padding: 1.5rem !important;
+  }
+}

@@ -9,7 +9,7 @@ import SearcherModal from "./components/searcher/SearcherModal";
 import WishListModal from "./components/wishlist/WishListModal";
 import GeneralProvider from "./context/GeneralProvider";
 import Router from "./router/Router";
-
+import "./style/mobile-queries.css";
 function App() {
   return (
     <>
