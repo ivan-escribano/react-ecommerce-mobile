@@ -16,7 +16,7 @@ const ComparadorInputs = () => {
   };
   return (
     <div className="inputs-comparator d-flex ">
-      <div>
+      <div className="inputs-comparator__img">
         <img src={imgURL} alt="" />
       </div>
       <div className="d-flex flex-column align-items-center">
@@ -47,7 +47,7 @@ const ComparadorInputs = () => {
         </div>
         <button
           onClick={handleClick}
-          className="btn btn-color mt-5 w-50 d-flex align-items-center justify-content-center"
+          className="btn btn-color mt-5 w-50 d-flex align-items-center justify-content-center btn-comparator"
         >
           Compare mobiles <i class=" ms-3 fa-solid fa-mobile-retro fs-5"></i>
         </button>
