@@ -3,6 +3,7 @@ import "./Searcher.css";
 import productsData from "../../data/phones";
 import ProductItem from "../../pages/home/components/ProductItem";
 import { useState } from "react";
+import emptyImg from "../../assets/img/empty.webp";
 const SearcherModal = () => {
   const [word, setWord] = useState("");
   const inputSearch = useRef();
@@ -15,8 +16,14 @@ const SearcherModal = () => {
       .filter((product) => product.name.toLowerCase().includes(word))
       //Then return transform data in react component
       .map((product) => <ProductItem product={product} key={product.id} />);
-
-    return products.slice(0, 4);
+    return products.length > 0 ? (
+      products.slice(0, 4)
+    ) : (
+      <div className="d-flex flex-column m-auto">
+        <h4>No products finded</h4>
+        <img src={emptyImg} alt="Empty image" />
+      </div>
+    );
   };
   return (
     <div

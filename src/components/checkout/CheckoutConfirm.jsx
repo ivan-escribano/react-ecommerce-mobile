@@ -16,13 +16,15 @@ const CheckoutConfirm = () => {
     <div
       class="modal fade"
       id="confirmModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
       tabindex="-1"
-      aria-labelledby="confirmModalLabel"
+      aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered ">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header d-none">
             <button
               type="button"
               class="btn-close"

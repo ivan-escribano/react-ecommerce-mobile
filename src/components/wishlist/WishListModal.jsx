@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { WishContext } from "../../context/WishProvider";
+import EmptyComponent from "../empty/EmptyComponent";
 import "./WishList.css";
 import WishListItem from "./WishListItem";
 const WishListModal = () => {
@@ -31,9 +32,13 @@ const WishListModal = () => {
             ></button>
           </div>
           <div className="modal-body">
-            {wishList.map((wishItem) => (
-              <WishListItem key={wishItem.id} wishItem={wishItem} />
-            ))}
+            {wishList.length > 0 ? (
+              wishList.map((wishItem) => (
+                <WishListItem key={wishItem.id} wishItem={wishItem} />
+              ))
+            ) : (
+              <EmptyComponent cartTitle={"Wish list"} />
+            )}
           </div>
           {/* <div className="modal-footer"></div> */}
         </div>

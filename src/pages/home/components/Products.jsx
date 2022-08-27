@@ -1,7 +1,8 @@
 import React from "react";
 import { useContext } from "react";
+import EmptyComponent from "../../../components/empty/EmptyComponent.jsx";
 import { FilterContext } from "../../../context/FilterProvider.js";
-
+import emptyImg from "../../../assets/img/empty.webp";
 import productsData from "../../../data/phones.js";
 import ProductItem from "./ProductItem";
 const Products = () => {
@@ -25,7 +26,14 @@ const Products = () => {
         else if (product.brand === options.brand) return product;
       })
       .map((product) => <ProductItem product={product} key={product.id} />);
-    console.log(products);
+    return products.length > 0 ? (
+      products
+    ) : (
+      <div className="d-flex flex-column m-auto">
+        <h3>No products finded</h3>
+        <img src={emptyImg} alt="Empty image" />
+      </div>
+    );
     return products;
   };
   console.log(options);

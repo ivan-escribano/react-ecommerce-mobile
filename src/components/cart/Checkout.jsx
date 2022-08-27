@@ -15,6 +15,7 @@ const Checkout = () => {
         data-bs-target="#checkoutModal"
         data-bs-toggle="modal"
         data-bs-dismiss="modal"
+        disabled={shoppingCart.length > 0 ? false : true}
       >
         Checkout
       </button>
