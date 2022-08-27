@@ -11,7 +11,7 @@ const FilterColor = () => {
     // !COLORS
     <div className="filter-colors my-4">
       <h5 className="my-3">
-        Colors <i class="fa-solid fa-palette mx-1"></i> :
+        Colors <i className="fa-solid fa-palette mx-1"></i> :
       </h5>
       <div className="d-flex row row-cols-4 gy-3 ">
         <div className="col d-flex flex-column align-items-center ">

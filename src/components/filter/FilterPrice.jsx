@@ -24,7 +24,7 @@ const FilterPrice = () => {
   return (
     <div className="filter-price my-4">
       <h5>
-        Price <i class="fa-solid fa-money-bill-1-wave"></i> :
+        Price <i className="fa-solid fa-money-bill-1-wave"></i> :
       </h5>
       <div className="d-flex">
         <input

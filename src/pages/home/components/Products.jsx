@@ -34,9 +34,7 @@ const Products = () => {
         <img src={emptyImg} alt="Empty image" />
       </div>
     );
-    return products;
   };
-  console.log(options);
   // const { filter } = useContext(FilterProvider);
   return (
     <div className="products p-4">

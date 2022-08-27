@@ -27,22 +27,22 @@ const SearcherModal = () => {
   };
   return (
     <div
-      class="modal fade "
+      className="modal fade "
       id="searcherModal"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="searcherModalLabel"
       aria-hidden="true"
     >
       <div className="modal-dialog modal__search modal-xl m-auto">
-        <div class="modal-content">
-          <div class="modal-header cover">
+        <div className="modal-content">
+          <div className="modal-header cover">
             <div className=" w-50 searcher">
-              <h5 class="modal-title" id="exampleModalLabel">
+              <h5 className="modal-title" id="exampleModalLabel">
                 Searcher:
               </h5>
               <div className="input-group mt-2">
-                <span class="input-group-text" id="addon-wrapping">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                <span className="input-group-text" id="addon-wrapping">
+                  <i className="fa-solid fa-magnifying-glass"></i>
                 </span>
                 <input
                   type="text"
@@ -56,12 +56,12 @@ const SearcherModal = () => {
 
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div className="modal-body">
             <div className=" p-4">
               {" "}
               <h5>Results.</h5>

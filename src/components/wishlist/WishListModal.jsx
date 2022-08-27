@@ -11,7 +11,7 @@ const WishListModal = () => {
     <div
       className="modal fade right"
       id="wishListModal"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="wishListModalLabel"
       aria-hidden="true"
     >

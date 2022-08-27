@@ -12,7 +12,7 @@ const FilterBrand = () => {
   return (
     <div className="filter-brand my-4">
       <h5>
-        Brand <i class="fa-solid fa-mobile-screen-button mx-1"></i> :
+        Brand <i className="fa-solid fa-mobile-screen-button mx-1"></i> :
       </h5>
       <div className="d-flex flex-column">
         <label htmlFor="" className="my-1">

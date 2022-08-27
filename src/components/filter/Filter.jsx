@@ -9,7 +9,7 @@ const Filter = () => {
       <div
         className="modal fade right"
         id="filterModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="filterModalLabel"
         aria-hidden="true"
       >

@@ -2,60 +2,60 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <footer class=" text-center text-white mt-2">
-      <div class="container p-4 pb-0">
-        <section class="mb-4">
+    <footer className=" text-center text-white mt-2">
+      <div className="container p-4 pb-0">
+        <section className="mb-4">
           <a
-            class="btn btn-dark btn-floating m-1 icon-fb"
+            className="btn btn-dark btn-floating m-1 icon-fb"
             href="#!"
             role="button"
           >
-            <i class="fab fa-facebook-f"></i>
+            <i className="fab fa-facebook-f"></i>
           </a>
 
           <a
-            class="btn btn-dark btn-floating m-1 icon-twitter"
+            className="btn btn-dark btn-floating m-1 icon-twitter"
             href="#!"
             role="button"
           >
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </a>
 
           <a
-            class="btn btn-dark btn-floating m-1 icon-google"
+            className="btn btn-dark btn-floating m-1 icon-google"
             href="#!"
             role="button"
           >
-            <i class="fab fa-google"></i>
+            <i className="fab fa-google"></i>
           </a>
 
           <a
-            class="btn  btn-dark btn-floating m-1 icon-ig"
+            className="btn  btn-dark btn-floating m-1 icon-ig"
             href="#!"
             role="button"
           >
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
 
           <a
-            class="btn btn-dark  btn-floating m-1 icon-link"
+            className="btn btn-dark  btn-floating m-1 icon-link"
             href="#!"
             role="button"
           >
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-linkedin-in"></i>
           </a>
 
           <a
-            class="btn btn-dark btn-floating m-1 icon-git"
+            className="btn btn-dark btn-floating m-1 icon-git"
             href="#!"
             role="button"
           >
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
         </section>
       </div>
 
-      <div class="text-center p-3 footer2">
+      <div className="text-center p-3 footer2">
         © 2022 Copyright : Mr. Iván Escribano
       </div>
     </footer>

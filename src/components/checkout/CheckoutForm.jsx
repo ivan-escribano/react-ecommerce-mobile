@@ -23,28 +23,28 @@ const CheckoutForm = () => {
   const handleError = (errors) => {};
   return (
     <div
-      class="modal fade"
+      className="modal fade"
       id="checkoutModal"
       aria-hidden="true"
       aria-labelledby="checkoutModalLabel"
-      tabindex="-1"
+      tabIndex="-1"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header cover">
-            <h5 class="modal-title" id="exampleModalToggleLabel">
+      <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div className="modal-content">
+          <div className="modal-header cover">
+            <h5 className="modal-title" id="exampleModalToggleLabel">
               Payment details
             </h5>
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body ">
+          <div className="modal-body ">
             <h6>
-              User info <i class="fa-solid fa-user"></i> :
+              User info <i className="fa-solid fa-user"></i> :
             </h6>
             <hr className="cover" />
             <form
@@ -53,14 +53,14 @@ const CheckoutForm = () => {
             >
               <div className="user info">
                 {/* First row name , Lastname */}
-                <div class="row ">
-                  <div class="col">
-                    <label for="name" class="form-label">
+                <div className="row ">
+                  <div className="col">
+                    <label htmlFor="name" className="form-label">
                       Name:
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="First name"
                       aria-label="First name"
                       id="name"
@@ -71,13 +71,13 @@ const CheckoutForm = () => {
                       {errors?.firstname && errors.firstname.message}
                     </small>
                   </div>
-                  <div class="col">
-                    <label for="inputEmail4" class="form-label">
+                  <div className="col">
+                    <label htmlFor="inputEmail4" className="form-label">
                       Lastname:
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Last name"
                       aria-label="Last name"
                       id="Lastname"
@@ -91,13 +91,13 @@ const CheckoutForm = () => {
                 </div>
                 {/* 2 row email and address */}
 
-                <div class="col py-2">
-                  <label for="email" class="form-label">
+                <div className="col py-2">
+                  <label htmlFor="email" className="form-label">
                     Email:
                   </label>
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Email"
                     aria-label="Email"
                     id="email"
@@ -109,13 +109,13 @@ const CheckoutForm = () => {
                   </small>
                 </div>
 
-                <div class="col py-2">
-                  <label for="inputEmail4" class="form-label">
+                <div className="col py-2">
+                  <label htmlFor="inputEmail4" className="form-label">
                     Adress:
                   </label>
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Adress"
                     aria-label="Adress"
                     id="Adress"
@@ -130,16 +130,16 @@ const CheckoutForm = () => {
               <div className="payment-info py-3">
                 {/* PAYMENT CARD */}
                 <h6>
-                  Payment info <i class="fa-brands fa-cc-visa"></i>:
+                  Payment info <i className="fa-brands fa-cc-visa"></i>:
                 </h6>
                 <hr className="cover" />
-                <div class="col py-2">
-                  <label for="name-credit" class="form-label">
+                <div className="col py-2">
+                  <label htmlFor="name-credit" className="form-label">
                     Name credit card:
                   </label>
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Full name"
                     aria-label="Full name"
                     id="name-credit"
@@ -150,13 +150,13 @@ const CheckoutForm = () => {
                     {errors?.nameCard && errors.nameCard.message}
                   </small>
                 </div>
-                <div class="col py-2">
-                  <label for="card-number" class="form-label">
+                <div className="col py-2">
+                  <label htmlFor="card-number" className="form-label">
                     Card number:
                   </label>
                   <input
                     type="number"
-                    class="form-control"
+                    className="form-control"
                     placeholder="**** **** **** ****"
                     aria-label="Card number"
                     id="card-number"
@@ -169,7 +169,7 @@ const CheckoutForm = () => {
                 </div>
                 <div className="row py-2 ">
                   <div className="col d-flex flex-column">
-                    <label for="expiration" class="form-label">
+                    <label htmlFor="expiration" className="form-label">
                       Expires:
                     </label>
                     <div>
@@ -188,7 +188,7 @@ const CheckoutForm = () => {
                     </div>
                   </div>
                   <div className="col">
-                    <label for="cvc" class="form-label">
+                    <label htmlFor="cvc" className="form-label">
                       CVC:
                     </label>
                     <input
@@ -205,9 +205,9 @@ const CheckoutForm = () => {
                   </div>
                 </div>
               </div>{" "}
-              <div class="modal-footer">
+              <div className="modal-footer">
                 <button
-                  class="btn btn-color w-100 btn__checkout"
+                  className="btn btn-color w-100 btn__checkout"
                   data-bs-target="#confirmModal"
                   data-bs-toggle="modal"
                   data-bs-dismiss="modal"
