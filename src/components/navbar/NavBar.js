@@ -5,7 +5,7 @@ import ShowBtn from "./showBtn/ShowBtn";
 import "./NavBar.css";
 const NavBar = () => {
   return (
-    <nav className="navbar p-3" style={{ backgroundColor: "#FFF0F0" }}>
+    <nav className="navbar  p-3">
       <Logo />
       <LinksNav />
       <ShowBtn />

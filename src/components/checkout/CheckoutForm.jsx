@@ -1,7 +1,26 @@
 import React from "react";
 import Cart from "../cart/Cart";
+import { useForm } from "react-hook-form";
+import { checkoutValidation } from "../../utils/checkoutValidation";
+import "./Checkout.css";
 
 const CheckoutForm = () => {
+  //useForm hook
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isDirty, isValid },
+  } = useForm({
+    //When to apply treact-hook-form event
+    mode: "onChange",
+  });
+  //Date disable in input -  get current date disable dates past today
+  const date = new Date();
+  const month =
+    date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
+  const minDate = `${date.getFullYear()}-${month}`;
+  const handleCheckout = (data) => {};
+  const handleError = (errors) => {};
   return (
     <div
       class="modal fade"
@@ -28,7 +47,10 @@ const CheckoutForm = () => {
               User info <i class="fa-solid fa-user"></i> :
             </h6>
             <hr className="cover" />
-            <div className="form-payment py-2">
+            <form
+              className="form-payment py-2"
+              onSubmit={handleSubmit(handleCheckout, handleError)}
+            >
               <div className="user info">
                 {/* First row name , Lastname */}
                 <div class="row ">
@@ -42,7 +64,12 @@ const CheckoutForm = () => {
                       placeholder="First name"
                       aria-label="First name"
                       id="name"
+                      name="firstname"
+                      {...register("firstname", checkoutValidation.firstName)}
                     />
+                    <small className="checkout__error">
+                      {errors?.firstname && errors.firstname.message}
+                    </small>
                   </div>
                   <div class="col">
                     <label for="inputEmail4" class="form-label">
@@ -54,7 +81,12 @@ const CheckoutForm = () => {
                       placeholder="Last name"
                       aria-label="Last name"
                       id="Lastname"
+                      name="lastname"
+                      {...register("lastname", checkoutValidation.lastName)}
                     />
+                    <small className="checkout__error">
+                      {errors?.lastname && errors.lastname.message}
+                    </small>
                   </div>
                 </div>
                 {/* 2 row email and address */}
@@ -64,12 +96,17 @@ const CheckoutForm = () => {
                     Email:
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     placeholder="Email"
                     aria-label="Email"
                     id="email"
+                    name="email"
+                    {...register("email", checkoutValidation.email)}
                   />
+                  <small className="checkout__error">
+                    {errors?.email && errors.email.message}
+                  </small>
                 </div>
 
                 <div class="col py-2">
@@ -82,7 +119,12 @@ const CheckoutForm = () => {
                     placeholder="Adress"
                     aria-label="Adress"
                     id="Adress"
+                    name="address"
+                    {...register("address", checkoutValidation.address)}
                   />
+                  <small className="checkout__error">
+                    {errors?.address && errors.address.message}
+                  </small>
                 </div>
               </div>
               <div className="payment-info py-3">
@@ -101,38 +143,48 @@ const CheckoutForm = () => {
                     placeholder="Full name"
                     aria-label="Full name"
                     id="name-credit"
+                    name="nameCard"
+                    {...register("nameCard", checkoutValidation.nameCard)}
                   />
+                  <small className="checkout__error">
+                    {errors?.nameCard && errors.nameCard.message}
+                  </small>
                 </div>
                 <div class="col py-2">
                   <label for="card-number" class="form-label">
                     Card number:
                   </label>
                   <input
-                    type="text"
+                    type="number"
                     class="form-control"
                     placeholder="**** **** **** ****"
                     aria-label="Card number"
                     id="card-number"
+                    name="cardNumber"
+                    {...register("cardNumber", checkoutValidation.creditCard)}
                   />
+                  <small className="checkout__error">
+                    {errors?.cardNumber && errors.cardNumber.message}
+                  </small>
                 </div>
                 <div className="row py-2 ">
                   <div className="col d-flex flex-column">
                     <label for="expiration" class="form-label">
                       Expires:
                     </label>
-                    <div className="d-flex">
+                    <div>
                       <input
-                        type="text"
+                        type="month"
                         className=" form-control me-1"
-                        placeholder="MM/MM"
+                        placeholder="MM"
                         id="expire-month"
+                        min={minDate}
+                        name="expire"
+                        {...register("expire", checkoutValidation.expire)}
                       />
-                      <input
-                        type="text"
-                        className=" form-control"
-                        placeholder="YY/YY"
-                        id="expire-year"
-                      />
+                      <small className="checkout__error">
+                        {errors?.expire && errors.expire.message}
+                      </small>
                     </div>
                   </div>
                   <div className="col">
@@ -140,25 +192,31 @@ const CheckoutForm = () => {
                       CVC:
                     </label>
                     <input
-                      type="text"
+                      type="number"
                       className=" form-control"
                       placeholder="XXX"
                       id="cvc"
+                      name="cvc"
+                      {...register("cvc", checkoutValidation.cvc)}
                     />
+                    <small className="checkout__error">
+                      {errors?.cvc && errors.cvc.message}
+                    </small>
                   </div>
                 </div>
+              </div>{" "}
+              <div class="modal-footer">
+                <button
+                  class="btn btn-color w-100 btn__checkout"
+                  data-bs-target="#confirmModal"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                  disabled={!isValid}
+                >
+                  Submit
+                </button>
               </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-color w-100"
-              data-bs-target="#confirmModal"
-              data-bs-toggle="modal"
-              data-bs-dismiss="modal"
-            >
-              Submit
-            </button>
+            </form>
           </div>
         </div>
       </div>
