@@ -37,3 +37,6 @@ body {
 button:disabled {
   opacity: 0.42 !important;
 }
+.nav-mobile {
+  display: none;
+}

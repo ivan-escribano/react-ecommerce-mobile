@@ -16,16 +16,27 @@ const ComparadorTabla = () => {
           <tr>
             <th scope="col">Especificaciones</th>
             <th scope="col" className="text-center">
-              <img src={mobile1.img} alt="" className="w-25" />
-              <h5 className="my-3">{mobile1.name}</h5>
+              <img
+                src={mobile1.img}
+                alt=""
+                className="w-25 img-table__comparator"
+              />
             </th>
             <th scope="col" className="text-center">
-              <img src={mobile2.img} alt="" className="w-25" />
-              <h5 className="my-3">{mobile2.name}</h5>
+              <img
+                src={mobile2.img}
+                alt=""
+                className="w-25 img-table__comparator"
+              />
             </th>
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <th scope="row">Nombre</th>
+            <td>{mobile1.name} </td>
+            <td>{mobile2.name} </td>
+          </tr>
           <tr>
             <th scope="row">Precio</th>
             <td>{mobile1.price} €</td>

@@ -1,5 +1,8 @@
 /*!TABLETS AND BIG PHONES*/
 @media (max-width: 768px) {
+  .nav-mobile {
+    display: block;
+  }
   body {
     margin-bottom: 4rem;
   }
@@ -106,12 +109,16 @@
   }
   .comparator-btn {
     margin: 0 1rem;
+    align-items: center;
   }
-  .comparator-btn svg {
-    display: none !important;
+  .comparator-btn > .btn-color > svg {
+    display: none;
   }
   .comparator-btn > * {
-    margin-right: 1rem !important;
+    margin-right: 1.2rem !important;
+  }
+  .img-table__comparator {
+    width: 50% !important;
   }
   .comparator-product {
     padding: 1rem;
