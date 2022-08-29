@@ -43,8 +43,13 @@ Mobile e-commerce made with **React framework** where I can deepen and test my k
 
 ## Demo Screenshots
 
+1. ### General view
 ![general-view](https://user-images.githubusercontent.com/82597141/187143833-e8416e9f-b7f4-4a14-a62d-61c69954b42a.gif)
+
+2. ### Features
 ![features](https://user-images.githubusercontent.com/82597141/187143829-b229df1e-59ad-4470-9b19-151b3d100faa.gif)
+
+3. ### Responsive design
 ![responsive](https://user-images.githubusercontent.com/82597141/187143834-43496f79-bb32-4218-bbf8-2b19c95a319e.gif)
 
 ## Improvement
