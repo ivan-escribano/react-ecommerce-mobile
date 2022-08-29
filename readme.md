@@ -39,7 +39,7 @@ Mobile e-commerce made with **React framework** where I can deepen and test my k
 - 📱 **Mobile feature comparator.**
 - 🔟 **Mobile user puntuation comparator charts.**
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]("./src/assets/gif/comparator.gif")
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
