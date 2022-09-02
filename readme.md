@@ -34,18 +34,23 @@ Mobile e-commerce made with **React framework** where I can deepen and test my k
 - Color/design innovation and atractive to the user.
 - Adaptive responsive design.
 
-### Best Features
+### Best Features 🔝
 
 - 📱 **Mobile feature comparator.**
 - 🔟 **Mobile user puntuation comparator charts.**
 
-![App Screenshot](./src/assets/gif/comparator.gif)
+![comparator](https://user-images.githubusercontent.com/82597141/187143827-4b400ca6-7e84-463c-8719-81f569e02d23.gif)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Demo Screenshots 💻
 
-## Demo Screenshots
+### 1.  General view
+![general-view](https://user-images.githubusercontent.com/82597141/187143833-e8416e9f-b7f4-4a14-a62d-61c69954b42a.gif)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### 2.  Features
+![features](https://user-images.githubusercontent.com/82597141/187143829-b229df1e-59ad-4470-9b19-151b3d100faa.gif)
+
+ ### 3. Responsive design
+![responsive](https://user-images.githubusercontent.com/82597141/187143834-43496f79-bb32-4218-bbf8-2b19c95a319e.gif)
 
 ## Improvement
 
