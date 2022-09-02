@@ -8,13 +8,13 @@ const LinksNav = () => {
         <LinkNav src={"home"} name={"Home"} />
       </li>
       <li className="nav-item mx-4">
+        <LinkNav src={"comparador"} name={"Comparador"} />
+      </li>
+      <li className="nav-item mx-4">
         <LinkNav src={"new-arrivals"} name={"New arrivals"} />
       </li>
       <li className="nav-item mx-4">
         <LinkNav src={"contact"} name={"Contact"} />
-      </li>
-      <li className="nav-item mx-4">
-        <LinkNav src={"comparador"} name={"Comparador"} />
       </li>
     </ul>
   );

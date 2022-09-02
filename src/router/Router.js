@@ -19,6 +19,7 @@ const Router = () => {
         <Route path="table" element={<ComparadorTabla />} />
         <Route path="graphic" element={<ComparadorGraphic />} />
       </Route>
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 };
