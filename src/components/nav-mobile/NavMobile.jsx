@@ -44,12 +44,6 @@ const NavMobile = () => {
               <LinkNav src={"home"} name={"Home"} />
             </li>
             <li className="nav-item__mobile ">
-              <LinkNav src={"new-arrivals"} name={"New arrivals"} />
-            </li>
-            <li className="nav-item__mobile">
-              <LinkNav src={"contact"} name={"Contact"} />
-            </li>
-            <li className="nav-item__mobile ">
               <LinkNav src={"comparador"} name={"Comparador"} />
             </li>
           </ul>
