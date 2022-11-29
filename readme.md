@@ -2,7 +2,7 @@
 
 Mobile e-commerce made with **React framework** where I can deepen and test my knowledge at the Front End level with one of the most demanded technologies on the market.
 
-> 🌐 Live demo [_here_](https://react-ecommerce-mobile-topaz.vercel.app/).
+> 🌐 Live demo [_here_](https://react-ecommerce-mobile-ivan.vercel.app).
 
 ## General Information
 
